@@ -1,205 +1,482 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>کیان پیرفلک | یادبود</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="صفحه یادبود کیان پیرفلک">
-  <meta name="keywords" content="کیان پیرفلک, یادبود, خوزستان">
+<title>نام شهید | شهر | خون جاری خوزستان</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta name="description"
+content="یاد و نام شهید؛ صفحه یادبود و ثبت روایت زندگی و خاطرات.">
+
+<meta name="keywords"
+content="نام شهید, شهر, خوزستان, یادبود, خون جاری خوزستان">
+
+<meta name="author" content="خون جاری خوزستان">
+<meta name="robots" content="index, follow">
+<meta name="language" content="fa">
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 15px;
+    background: #111;
+    color: #eee;
+    font-family: Tahoma, Arial, sans-serif;
+    line-height: 1.9;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0 20px;
+    color: #fff;
+}
+
+.photo {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.timer-title {
+    font-size: 18px;
+    color: #ccc;
+    margin: 15px 0;
+}
+
+.timer {
+    display: flex;
+    direction: ltr;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.timer-box {
+    min-width: 105px;
+    padding: 12px 8px;
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 9px;
+}
+
+.timer-number {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #e63946;
+    direction: ltr;
+}
+
+.timer-label {
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.city {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e63946;
+    margin: 10px 0 20px;
+}
+
+.description {
+    text-align: right;
+    background: #181818;
+    border-right: 3px solid #e63946;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #ddd;
+}
+
+.source {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 14px;
+    color: #999;
+}
+
+.instagram-box {
+    margin: 35px 0 10px;
+    padding: 20px 15px;
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.instagram-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f2f2f2;
+    margin-bottom: 8px;
+}
+
+.instagram-text {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #ccc;
+    margin: 5px 0 18px;
+}
+
+.instagram-link {
+    display: inline-block;
+    background: #e63946;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.instagram-link:hover {
+    opacity: 0.85;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
 
     body {
-      font-family: Tahoma, Arial, sans-serif;
-      background: #111;
-      color: #eee;
-      line-height: 2;
+        padding: 20px 10px;
     }
 
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      background:
-        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.88)),
-        url("YOUR-IMAGE-URL-HERE") center/cover no-repeat;
+    h1 {
+        font-size: 29px;
     }
 
-    .hero-content {
-      max-width: 850px;
+    .timer-box {
+        min-width: 78px;
     }
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
-      color: #fff;
+    .timer-number {
+        font-size: 25px;
     }
 
-    .hero p {
-      font-size: 20px;
-      color: #ccc;
+    .timer-label {
+        font-size: 13px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 20px;
+    .description {
+        font-size: 16px;
     }
 
-    section {
-      margin-bottom: 45px;
-    }
+}
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 18px;
-      padding-right: 15px;
-      border-right: 4px solid #9b1c1c;
-    }
+</style>
 
-    p {
-      font-size: 17px;
-      color: #d5d5d5;
-    }
-
-    .info {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-      margin-top: 25px;
-    }
-
-    .info-box {
-      background: #1b1b1b;
-      border: 1px solid #333;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .info-box strong {
-      display: block;
-      color: #aaa;
-      margin-bottom: 8px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 1px solid #333;
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px 20px;
-      background: #090909;
-      color: #888;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-
-      h2 {
-        font-size: 24px;
-      }
-    }
-  </style>
 </head>
+
 
 <body>
 
-  <header class="hero">
-    <div class="hero-content">
-      <h1>کیان پیرفلک</h1>
-      <p>یادبود و گرامی‌داشت یاد و نام او</p>
+<div class="container">
+
+
+    <h1>نام شهید</h1>
+
+
+    <img
+        class="photo"
+        src="YOUR-IMAGE.jpg"
+        alt="نام شهید">
+
+
+    <div class="timer-title">
+
+        ساعات، دقایق و ثانیه‌هایی که از نبودن
+        <strong>نام شهید</strong>
+        گذشت
+
     </div>
-  </header>
 
-  <main class="container">
 
-    <section>
-      <h2>کیان پیرفلک</h2>
-      <p>
-        این صفحه برای ثبت یاد، نام و روایت زندگی کیان پیرفلک ایجاد شده است.
-      </p>
+    <div class="timer">
 
-      <div class="info">
-        <div class="info-box">
-          <strong>نام</strong>
-          کیان پیرفلک
+        <div class="timer-box">
+            <span class="timer-number" id="days">۰</span>
+            <span class="timer-label">روز</span>
         </div>
 
-        <div class="info-box">
-          <strong>زادگاه</strong>
-          ایذه، خوزستان
+        <div class="timer-box">
+            <span class="timer-number" id="hours">۰</span>
+            <span class="timer-label">ساعت</span>
         </div>
 
-        <div class="info-box">
-          <strong>تاریخ تولد</strong>
-          <!-- اطلاعات را بعداً وارد می‌کنیم -->
+        <div class="timer-box">
+            <span class="timer-number" id="minutes">۰</span>
+            <span class="timer-label">دقیقه</span>
         </div>
 
-        <div class="info-box">
-          <strong>تاریخ جان‌باختن</strong>
-          <!-- اطلاعات را بعداً وارد می‌کنیم -->
+        <div class="timer-box">
+            <span class="timer-number" id="seconds">۰</span>
+            <span class="timer-label">ثانیه</span>
         </div>
-      </div>
+
+    </div>
+
+
+    <div class="city">
+
+        شهر / استان
+
+    </div>
+
+
+    <div class="description">
+
+        متن معرفی و زندگی‌نامه شهید در این قسمت قرار می‌گیرد.
+
+        <br><br>
+
+        روایت زندگی، نحوه جان‌باختن، خاطرات خانواده
+        و سایر اطلاعات مستند در این قسمت نوشته خواهد شد.
+
+        <br><br>
+
+        این قسمت برای هر فرد به صورت اختصاصی تکمیل خواهد شد.
+
+    </div>
+
+
+    <div class="source">
+
+        منبع:
+        منابع و گزارش‌های مستند
+
+    </div>
+
+
+    <section class="instagram-box">
+
+        <div class="instagram-title">
+
+            خون جاری خوزستان
+
+        </div>
+
+
+        <div class="instagram-text">
+
+            این صفحه بخشی از پروژه
+            «خون جاری خوزستان» است.
+
+            برای دیدن نام و یاد دیگر جان‌باختگان
+            خوزستان، به صفحه اینستاگرام ما سر بزنید.
+
+        </div>
+
+
+        <a
+            class="instagram-link"
+            href="https://www.instagram.com/khoon.jari.khuzestan/"
+            target="_blank"
+            rel="noopener">
+
+            مشاهده صفحه خون جاری خوزستان ←
+
+        </a>
+
     </section>
 
-    <section>
-      <h2>زندگی و یاد</h2>
-      <p>
-        متن زندگی‌نامه و روایت زندگی کیان پیرفلک در این بخش قرار خواهد گرفت.
-      </p>
-    </section>
 
-    <section>
-      <h2>روایت و خاطرات</h2>
-      <p>
-        خاطرات، نوشته‌ها و روایت‌های مرتبط با کیان در این بخش منتشر خواهد شد.
-      </p>
-    </section>
+    <div class="footer">
 
-    <section>
-      <h2>گالری تصاویر</h2>
+        یاد و نام
+        <span id="footer-name">نام شهید</span>
 
-      <div class="gallery">
-        <img src="IMAGE-1-URL" alt="کیان پیرفلک">
-        <img src="IMAGE-2-URL" alt="کیان پیرفلک">
-        <img src="IMAGE-3-URL" alt="کیان پیرفلک">
-      </div>
-    </section>
+        <br>
 
-  </main>
+        خون جاری خوزستان
 
-  <footer>
-    یاد و نام کیان پیرفلک
-  </footer>
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+/*
+========================================
+تنظیمات اصلی هر صفحه
+========================================
+*/
+
+/*
+نام شهید
+*/
+const personName = "نام شهید";
+
+
+/*
+تاریخ شروع شمارنده
+
+فرمت:
+سال، ماه - 1، روز، ساعت، دقیقه، ثانیه
+
+مثال:
+18 آبان 1398
+
+در JavaScript:
+new Date(2019, 10, 18, 0, 0, 0)
+
+فعلاً تاریخ نمونه است.
+*/
+const startDate = new Date(
+    2019,
+    10,
+    18,
+    0,
+    0,
+    0
+);
+
+
+
+/*
+========================================
+تبدیل اعداد انگلیسی به فارسی
+========================================
+*/
+
+function toPersianNumber(number) {
+
+    return number
+        .toString()
+        .replace(/\d/g, function(d) {
+
+            return "۰۱۲۳۴۵۶۷۸۹"[d];
+
+        });
+
+}
+
+
+
+/*
+========================================
+شمارنده
+========================================
+*/
+
+function updateTimer() {
+
+    const now = new Date();
+
+    let difference = now - startDate;
+
+
+    if (difference < 0) {
+
+        difference = 0;
+
+    }
+
+
+    const totalSeconds =
+        Math.floor(difference / 1000);
+
+
+    const days =
+        Math.floor(
+            totalSeconds / 86400
+        );
+
+
+    const hours =
+        Math.floor(
+            (totalSeconds % 86400) / 3600
+        );
+
+
+    const minutes =
+        Math.floor(
+            (totalSeconds % 3600) / 60
+        );
+
+
+    const seconds =
+        totalSeconds % 60;
+
+
+
+    document.getElementById("days").textContent =
+        toPersianNumber(days);
+
+
+    document.getElementById("hours").textContent =
+        toPersianNumber(hours);
+
+
+    document.getElementById("minutes").textContent =
+        toPersianNumber(minutes);
+
+
+    document.getElementById("seconds").textContent =
+        toPersianNumber(seconds);
+
+}
+
+
+
+updateTimer();
+
+
+setInterval(
+    updateTimer,
+    1000
+);
+
+
+/*
+نام صفحه
+*/
+
+document.querySelector("h1").textContent =
+    personName;
+
+
+document.getElementById("footer-name").textContent =
+    personName;
+
+
+document.querySelector(".photo").alt =
+    personName;
+
+
+</script>
+
 
 </body>
+
 </html>
